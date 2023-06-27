@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Sign Up</title>
+</head>
+<body>
+    <a href="login.php" style="color:rgb(24, 54, 74);margin:15px;font-size:30px;position:absolute;z-index: 9;"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+    <div class="signup-cont">
+    <div class="signup-container">
+        <div class="signup-content">
+            <div class="signup-title">
+                <div class="signup-title-content">
+                    <h3><i class="fa fa-user-plus" aria-hidden="true"></i>
+                        Signing Up</h3>
+                </div>
+            </div>
+            <form action="signup.php" method="POST">
+                <div class="row">
+                    <div class="column">
+                        <label for="fname">Firstname:</label><br>
+                        <input type="text" name="fname" id="fnmae"><br><br>
+
+                        <label for="mname">Middlename:</label><br>
+                        <input type="text" name="mname" id="mname"><br><br>
+
+                        <label for="lname">Lastname:</label><br>
+                        <input type="text" name="lname" id="lname"><br><br>
+
+                        <label for="gender">Gender:</label><br>
+                        <select name="gender" id="gender" style="padding: 2px;">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select><br><br>
+                     </div>
+                    <div class="column">
+                        <label for="birthdate">Birthdate:</label><br>
+                        <input type="date" name="birthdate" id="birthdate" max="2002-12-31"><br><br>
+
+                        <label for="age">Age:</label><br>
+                        <input type="number" name="age" id="age" min="18" max="100" size="2"><br><br>
+
+                        <label for="contact">Phone:</label><br>
+                        <input type="number" name="contact" placeholder="0912-345-6789" maxlength="11"><br><br>
+
+                        <label for="address">Address:</label><br>
+                        <input type="text" name="address" id="address"><br><br>
+                    </div>
+                    <div class="column">
+                        <label for="nationality">Nationality:</label><br>
+                        <input type="text" name="nationality" id="nationality"><br><br>
+
+                        <label for="usename">Username:</label><br>
+                        <input type="text" id="username" name="usename" required><br><br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email" name="email" required><br><br>
+                        
+                        <label for="pass">Password:</label><br>
+                        <input type="password" id="pass" name="pass" minlength="10" required><br><br>
+                    </div>
+                    
+                    <input type="submit" name="save" value="Sign Up" class="submit" style="margin-left: 40%; position: relative;font-size: 15px;padding: 5px; width: 100px;
+                    height: 35px;">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
